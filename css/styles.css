@@ -267,6 +267,22 @@ p {
   gap: 20px;
 }
 
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
 }
@@ -318,6 +334,14 @@ p {
 
 .address-link:hover {
   color: var(--color-brand-light);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-light);
 }
 
 .address-copyright {
