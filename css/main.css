@@ -3,37 +3,29 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"),
-    url("../fonts/poppins-v24-latin-300.ttf") format("truetype");
+  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"), url("../fonts/poppins-v24-latin-300.ttf") format("truetype");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"),
-    url("../fonts/poppins-v24-latin-regular.ttf") format("truetype");
+  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v24-latin-regular.ttf") format("truetype");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"),
-    url("../fonts/poppins-v24-latin-600.ttf") format("truetype");
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"), url("../fonts/poppins-v24-latin-600.ttf") format("truetype");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"),
-    url("../fonts/poppins-v24-latin-900.ttf") format("truetype");
+  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"), url("../fonts/poppins-v24-latin-900.ttf") format("truetype");
 }
-
 :root {
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261a;
@@ -43,7 +35,6 @@
   --color-secondary-light: #cfcfbc;
 }
 
-/* BASE */
 * {
   box-sizing: border-box;
 }
@@ -83,7 +74,39 @@ p {
   margin-top: 0;
 }
 
-/* LINK */
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section:last-child {
+  padding-bottom: 96px;
+}
+
+.section-header {
+  font-size: 64px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.section-header .accent {
+  color: var(--color-brand-dark);
+}
+
+.accent {
+  color: var(--color-brand-light);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .link {
   color: var(--color-primary-light);
   transition: color 0.3s;
@@ -93,7 +116,6 @@ p {
   color: var(--color-brand-light);
 }
 
-/* BUTTON */
 .button {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
@@ -112,41 +134,6 @@ p {
   background-color: var(--color-primary-light);
 }
 
-/* COMMON */
-.container {
-  width: 100%;
-  max-width: 1288px;
-  padding: 0 24px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 48px 0;
-}
-
-.section:last-child {
-  padding-bottom: 96px;
-}
-
-.accent {
-  color: var(--color-brand-light);
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.section-header {
-  font-size: 64px;
-  line-height: 1.3;
-  font-weight: 900;
-}
-
-.section-header .accent {
-  color: var(--color-brand-dark);
-}
-
-/* HEADER */
 .header {
   position: absolute;
   top: 0;
@@ -176,16 +163,9 @@ p {
   gap: 40px;
 }
 
-/* HERO SECTION */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(
-      135deg,
-      rgba(18, 18, 17, 0.78) 0%,
-      rgba(18, 18, 17, 0.6) 64%,
-      rgba(18, 18, 17, 0) 100%
-    ),
-    url("../images/hero-section-background.jpg");
+  background-image: linear-gradient(135deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 64%, rgba(18, 18, 17, 0) 100%), url("../images/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -203,7 +183,6 @@ p {
   color: var(--color-brand-light);
 }
 
-/* ADVANTAGES SECTION */
 .advantages-section {
   padding-bottom: 48px;
   background-color: var(--color-brand-light);
@@ -223,13 +202,11 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-
   color: var(--color-primary-light);
   font-weight: 300;
   margin: 0;
 }
 
-/* TRADITIONS SECTION */
 .traditions-container {
   display: flex;
   justify-content: space-between;
@@ -251,7 +228,6 @@ p {
   font-weight: 600;
 }
 
-/* CHEF SECTION */
 .chefs-header {
   margin-bottom: 80px;
   text-align: center;
@@ -293,8 +269,7 @@ p {
 
 .chef-image {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light),
-    -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -311,7 +286,6 @@ p {
   margin-bottom: 0;
 }
 
-/* FORMAT SECTION */
 .formats-header {
   margin-bottom: 80px;
   text-align: center;
@@ -357,27 +331,44 @@ p {
 }
 
 .format-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
   height: 444px;
   padding: 24px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(49, 38, 26, 0) 55%,
-    rgba(49, 38, 26, 0.71) 73%,
-    rgba(49, 38, 26, 1) 100%
-  );
+  background-image: linear-gradient(to bottom, rgba(49, 38, 26, 0) 55%, rgba(49, 38, 26, 0.71) 73%, rgb(49, 38, 26) 100%);
+  border-radius: 16px;
+}
+
+.format-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .format-title {
   font-size: 24px;
   color: var(--color-primary-light);
+  margin-bottom: 16px;
 }
 
 .format-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 14px;
   color: var(--color-primary-light);
+  height: 120px;
 }
 
-/* CONTACTS SECTION */
+.format-text p {
+  margin-bottom: 0;
+}
+
 .contacts-header {
   margin-bottom: 16px;
 }
@@ -398,9 +389,27 @@ p {
   font-size: 16px;
 }
 
+.form-input::-moz-placeholder {
+  font-size: 16px;
+  color: var(--color-secondary-dark);
+}
+
 .form-input::placeholder {
   font-size: 16px;
   color: var(--color-secondary-dark);
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-light);
+  outline: none;
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
 }
 
 .form-btn {
@@ -434,7 +443,6 @@ p {
   margin: 25px 0;
 }
 
-/* FOOTER */
 .footer {
   background-image: url(../images/footer-background.png);
   background-color: var(--color-primary-dark);
@@ -520,8 +528,6 @@ p {
   margin-bottom: 0;
 }
 
-/* MODAL */
-
 .backdrop {
   display: flex;
   justify-content: center;
@@ -532,7 +538,7 @@ p {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: opasity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -565,4 +571,4 @@ p {
 .modal-text {
   margin-bottom: 72px;
   color: var(--color-brand-dark);
-}
+}/*# sourceMappingURL=main.css.map */

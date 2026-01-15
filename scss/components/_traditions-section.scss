@@ -1,0 +1,20 @@
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-image {
+  border-radius: 200px 200px 0 0;
+}
+
+.traditions-header {
+  margin-bottom: 42px;
+}
+
+.traditions-text .accent {
+  font-weight: 600;
+}

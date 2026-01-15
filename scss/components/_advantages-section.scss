@@ -1,0 +1,24 @@
+.advantages-section {
+  padding-bottom: 48px;
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  color: var(--color-primary-light);
+  font-weight: 300;
+  margin: 0;
+}
