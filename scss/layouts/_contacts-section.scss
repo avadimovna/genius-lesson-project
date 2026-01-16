@@ -1,0 +1,31 @@
+.contacts-section {
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__text {
+    color: var(--color-brand-dark);
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    width: 600px;
+    height: 600px;
+    margin: 25px 0;
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10.5vw;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10.5vw;
+  }
+
+  &__menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
