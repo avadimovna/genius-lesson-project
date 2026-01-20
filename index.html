@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,51 @@
               <li><a href="#contacts-section" class="link">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="header__button button" type="button">
+            Замовити дзвінок
+          </button>
+          <button class="header__burger" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close" type="button">
+              <svg width="12" height="12" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-close-btn"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo" href="#">
+              <img
+                src="./images/logo-black.svg"
+                alt="Логотип сучасної пекарні"
+                width="72"
+                height="38"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a href="#traditions-section" class="mobile-menu__link link"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a href="#chefs-section" class="mobile-menu__link link"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li>
+                <a href="#formats-section" class="mobile-menu__link link"
+                  >Формати</a
+                >
+              </li>
+              <li>
+                <a href="#contacts-section" class="mobile-menu__link link"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -33,6 +77,9 @@
           <h1 class="hero-section__title">
             <span class="text-brand-light">Сучасна</span> пекарня
           </h1>
+          <button class="hero-section__button button" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -70,6 +117,7 @@
             </div>
             <img
               class="traditions-section__image"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
               src="./images/baker-man.jpg"
               alt="Усміхнений пекар дивиться на батони"
             />
@@ -128,7 +176,7 @@
           </ul>
         </div>
       </section>
-      <section class="formats-section section" id="formats-section">
+      <!-- <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2 class="section__header formats-section__header">Формати</h2>
           <div class="formats-section__container">
@@ -197,7 +245,7 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__container">
@@ -262,8 +310,6 @@
             <iframe
               class="contacts-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447042529!2d30.48869301247454!3d50.456680986796286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sro!4v1767796338086!5m2!1suk!2sro"
-              width="600"
-              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -339,7 +385,11 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__btn-close">close</button>
+        <button class="modal__btn-close" type="button">
+          <svg width="16" height="16" viewBox="0 0 32 32">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
         <h2 class="section__header modal__header">Замовити дзвінок</h2>
         <p class="modal__text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
